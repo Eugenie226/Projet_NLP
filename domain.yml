@@ -1,0 +1,80 @@
+version: "3.1"
+
+intents:
+  - greet
+  - ask_events
+  - ask_results
+  - ask_athlete_info
+  - intent_horaire_event
+  - intent_resultats_event
+  - intent_info_athlete
+  - intent_info_historique
+  - goodbye
+
+entities:
+  - athlete_name
+  - sport_event
+  - sport
+  - athlete
+  - date
+  - lieu
+
+slots:
+  athlete_name:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: athlete_name
+  sport_event:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: sport_event
+  
+
+responses:
+  utter_greet:
+    - text: "Bonjour ! Comment puis-je vous aider avec les Jeux Olympiques aujourd'hui ?"
+    - text: "Salut ! Que puis-je faire pour toi concernant les JO ?"
+    - text: "Hello ! Prêt(e) à parler des Jeux Olympiques ?"
+
+  utter_goodbye:
+    - text: "Au revoir et à bientôt !"
+    - text: "Merci de m'avoir parlé, à la prochaine !"
+    - text: "Bye ! Passe une bonne journée !"
+
+  utter_ask_events:
+    - text: "Les prochains événements olympiques sont... [à compléter avec des actions personnalisées]"
+    - text: "Voici la liste des événements à venir aux Jeux Olympiques : [à compléter avec des actions personnalisées]"
+    - text: "Les compétitions à venir aujourd'hui sont... [à compléter avec des actions personnalisées]"
+
+  utter_ask_results:
+    - text: "Voici les résultats des dernières compétitions : [à compléter avec des actions personnalisées]"
+    - text: "Résultats récents des épreuves olympiques : [à compléter avec des actions personnalisées]"
+    - text: "Voici les résultats du jour : [à compléter avec des actions personnalisées]"
+
+  utter_ask_athlete_info:
+    - text: "Voici des informations sur cet athlète : [à compléter avec des actions personnalisées]"
+    - text: "Tout ce que vous devez savoir sur cet athlète : [à compléter avec des actions personnalisées]"
+    - text: "Voici les détails sur cet athlète olympique : [à compléter avec des actions personnalisées]"
+
+  utter_ask_horaire_event:
+    - text: "Les horaires des épreuves demandées sont : [à compléter avec des actions personnalisées]"
+    - text: "Voici le programme pour les épreuves à venir : [à compléter avec des actions personnalisées]"
+    - text: "Les épreuves débuteront à ces heures : [à compléter avec des actions personnalisées]"
+
+  utter_ask_resultats_event:
+    - text: "Voici les résultats pour l'épreuve mentionnée : [à compléter avec des actions personnalisées]"
+    - text: "Les résultats pour cette épreuve sont : [à compléter avec des actions personnalisées]"
+    - text: "Voici les résultats détaillés de l'épreuve : [à compléter avec des actions personnalisées]"
+
+  utter_ask_info_historique:
+    - text: "Voici l'historique des Jeux Olympiques : [à compléter avec des actions personnalisées]"
+    - text: "L'histoire des Jeux Olympiques est fascinante ! [à compléter avec des actions personnalisées]"
+    - text: "Voici des informations historiques sur les JO : [à compléter avec des actions personnalisées]"
+    - text: "Voici des informations historiques sur les JO : Les Jeux Olympiques ont une longue histoire qui remonte à la Grèce antique. Les premiers Jeux Olympiques ont été organisés à Olympie en 776 avant J.-C. Ils étaient célébrés tous les quatre ans en l'honneur de Zeus, le dieu suprême dans la mythologie grecque. À cette époque, les compétitions comprenaient principalement des courses, des lancers de disque et de javelot, des luttes et des courses de chars.Les Jeux Olympiques antiques se sont poursuivis jusqu'en 393 après J.-C., lorsque l'empereur romain Théodose Ier les a abolis. Ils sont restés oubliés pendant des siècles jusqu'à ce que Pierre de Coubertin, un éducateur français, propose de les relancer à la fin du XIXe siècle. C'est ainsi qu'ont eu lieu les premiers Jeux Olympiques modernes à Athènes en 1896, rassemblant des athlètes de plusieurs nations pour concourir dans diverses disciplines sportives.Depuis lors, les Jeux Olympiques modernes sont devenus l'un des plus grands événements sportifs mondiaux, organisés tous les quatre ans, avec des éditions d'été et d'hiver."
+
+actions:
+  - action_provide_events
+  - action_provide_results
+  - action_provide_athlete_info

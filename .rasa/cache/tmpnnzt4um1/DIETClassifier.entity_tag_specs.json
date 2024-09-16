@@ -1,0 +1,44 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-athlete",
+      "2": "I-athlete",
+      "3": "L-athlete",
+      "4": "U-athlete",
+      "5": "B-date",
+      "6": "I-date",
+      "7": "L-date",
+      "8": "U-date",
+      "9": "B-lieu",
+      "10": "I-lieu",
+      "11": "L-lieu",
+      "12": "U-lieu",
+      "13": "B-sport",
+      "14": "I-sport",
+      "15": "L-sport",
+      "16": "U-sport",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-athlete": 1,
+      "I-athlete": 2,
+      "L-athlete": 3,
+      "U-athlete": 4,
+      "B-date": 5,
+      "I-date": 6,
+      "L-date": 7,
+      "U-date": 8,
+      "B-lieu": 9,
+      "I-lieu": 10,
+      "L-lieu": 11,
+      "U-lieu": 12,
+      "B-sport": 13,
+      "I-sport": 14,
+      "L-sport": 15,
+      "U-sport": 16,
+      "O": 0
+    },
+    "num_tags": 17
+  }
+]

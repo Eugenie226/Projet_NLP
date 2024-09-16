@@ -1,0 +1,105 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - Bonjour
+      - Salut
+      - Hello
+      - Hey
+      - Coucou
+      - Bien le bonjour
+      - Salut, ça va ?
+
+  - intent: ask_events
+    examples: |
+      - Quels sont les prochains événements des Jeux Olympiques ?
+      - Que se passe-t-il aujourd'hui aux Jeux Olympiques ?
+      - Donne-moi les événements olympiques de demain.
+      - Quelle est l'histoire des Jeux Olympiques ?
+      - Quand ont commencé les premiers Jeux Olympiques ?
+      - Informations sur les anciens Jeux Olympiques
+      - Quels sports sont prévus demain ?
+      - Les finales du basket sont quand ?
+      - Quels sports auront lieu cette semaine ?
+      - Quelle est la prochaine épreuve importante ?
+      - Y a-t-il des finales aujourd'hui ?
+
+  - intent: ask_results
+    examples: |
+      - Quels sont les résultats du 100m masculin ?
+      - Quels sont les résultats du [100 m](sport) ?
+      - Montre-moi les résultats du [sprint](sport)
+      - Résultats du [marathon](sport), s'il te plaît
+      - Qui a gagné la médaille d'or au judo ?
+      - Donne-moi les résultats de la finale de basket.
+      - Quel pays a remporté le plus de médailles aujourd'hui ?
+      - Quels sont les derniers résultats en natation ?
+      - Quel est le score final du match de handball ?
+      - Qui a gagné le marathon ?
+      - Est-ce que la France a gagné des médailles aujourd'hui ?
+
+  - intent: ask_athlete_info
+    examples: |
+      - Qui est Usain Bolt ?
+      - Parle-moi de Michael Phelps.
+      - Quelle est l'histoire de Simone Biles aux Jeux Olympiques ?
+      - Quels records a battu Katie Ledecky ?
+      - Quelles sont les performances de Novak Djokovic aux JO ?
+      - Est-ce que Teddy Riner a déjà gagné une médaille d'or ?
+      - Quel athlète a le plus de médailles aux Jeux Olympiques ?
+      - Combien de médailles a remporté Serena Williams aux JO ?
+      - Parle-moi de l'athlète (athlete_name)
+      - Qui est (athlete_name)?
+      - Quel est le parcours de (athlete_name)?
+      - Quels sont les accomplissements de (athlete_name)?
+      - Peux-tu me donner des détails sur (athlete_name)?
+
+  - intent: intent_horaire_event
+    examples: |
+      - Quand aura lieu l'[épreuve de natation](sport) ?
+      - À quelle heure se déroule le [marathon](sport) ?
+      - Donne-moi les horaires des [épreuves d'athlétisme](sport).
+      - À quelle heure commence la finale de [basket](sport) ?
+      - Quand est le match de [volley](sport) entre la France et le Brésil ?
+      - Quel est le programme des compétitions pour demain ?
+      - Les compétitions commencent à quelle heure aujourd'hui ?
+
+  - intent: intent_resultats_event
+    examples: |
+      - Quels sont les résultats du [100 mètres](sport) ?
+      - Qui a remporté la médaille d'or au [triathlon](sport) ?
+      - Quels sont les résultats de la compétition de [judo](sport) du [10 août 2024](date) ?
+      - Quel est le classement final du [décathlon](sport) ?
+      - Le match de [football](sport) entre l'Allemagne et l'Espagne s'est terminé comment ?
+      - Qui a remporté la médaille d'argent en [gymnastique](sport) ?
+      - Qui sont les médaillés du [saut en hauteur](sport) ?
+
+  - intent: intent_info_athlete
+    examples: |
+      - Qui est [Usain Bolt](athlete) ?
+      - Raconte-moi l’histoire de [Simone Biles](athlete).
+      - Quels sont les records de [Michael Phelps](athlete) aux Jeux Olympiques ?
+      - Combien de médailles a remporté [Teddy Riner](athlete) ?
+      - Parle-moi des performances de [Serena Williams](athlete) aux JO.
+      - [LeBron James](athlete) a-t-il joué aux Jeux Olympiques ?
+      - Quelles sont les performances de [Neymar](athlete) aux JO ?
+
+  - intent: intent_info_historique
+    examples: |
+      - Quand les Jeux Olympiques ont-ils eu lieu pour la première fois ?
+      - En quelle année les Jeux Olympiques de [Tokyo](lieu) ont-ils commencé ?
+      - Quels pays ont accueilli les Jeux Olympiques d'été ?
+      - Quelle est l'histoire des Jeux Olympiques ?
+      - En quelle année ont eu lieu les premiers Jeux Olympiques modernes ?
+      - Combien de pays participent aux Jeux Olympiques ?
+      - Depuis quand les femmes participent-elles aux JO ?
+
+  - intent: goodbye
+    examples: |
+      - Au revoir
+      - À plus tard
+      - Bye
+      - À la prochaine
+      - Merci et au revoir
+      - Salut, à bientôt !

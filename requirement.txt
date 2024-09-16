@@ -1,0 +1,14 @@
+ rasa init
+
+ python -m venv rasa-env  
+
+ rasa-env\Scripts\activate   
+
+ pip install
+
+ rasa train  
+
+ rasa run actions  
+ 
+ rasa shell 
+  

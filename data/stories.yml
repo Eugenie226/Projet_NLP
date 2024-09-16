@@ -1,0 +1,19 @@
+version: "3.1"
+
+stories:
+  - story: Ask for upcoming events
+    steps:
+      - intent: ask_events
+      - action: action_provide_events
+
+  - story: Request_sports_results
+    steps:
+      - intent: ask_results
+        entities:
+          - sport: "100 m"
+      - action: action_provide_results
+
+  - story: Ask for athlete information
+    steps:
+      - intent: ask_athlete_info
+      - action: action_provide_athlete_info
